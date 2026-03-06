@@ -1,0 +1,43 @@
+Example 
+
+===================
+Interest Calculator
+===================
+
+1. Simple Interest
+2. Compound Interest
+3. Debt Interest
+4. Continuous Interest
+5. Exit
+
+Enter your choice: 3 
+
+** screen will clear **
+
+-----------------
+Solving For
+-----------------
+
+1. Total Value
+2. Principal
+3. Return
+Solve For? : 1
+
+** Screen will clear **
+
+-----------------
+Solving for Total Value
+-----------------
+
+Principal Amount($): 150000
+Annual Percentage Rate(%): 5
+Compounding Periods(per year):12
+Period (Years): 10
+Total Value: 190917.6
+Monthly Payment: 1590.98
+Total Interest: 40917.6
+Interest Percentage: 21.43
+Principal Percentage: 78.57
+
+Restart y/n?:
+
