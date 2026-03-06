@@ -15,3 +15,5 @@ After picking which operation you will be performing it will ask you to input al
 
 Once your values are entered it will automatically run the calculations and spit out labelled results for you depending on the type of interest
 You will then be given the option to return to the main menu or terminate the program
+
+** system, math, and os will be needed from pip to run the software **
