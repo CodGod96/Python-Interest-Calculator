@@ -55,7 +55,7 @@ def sim_menu():
             print(' ')
             P = float(input("Principal Amount($): "))
             A = float(input("Annual Percentage Rate(%): "))
-            t = int(input("Period (Years): "))
+            t = float(input("Period (Years): "))
             APR = A / 100
             I = P * APR * t
             T = I + P
@@ -72,7 +72,7 @@ def sim_menu():
             clear_screen()
             print("Solving for Principal")
             A = float(input("Annual Percentage Rate(%): "))
-            t = int(input("Period (Years): "))
+            t = float(input("Period (Years): "))
             T = float(input("Total Value($): "))
             APR = A / 100
             P = round(T / (1 + (APR * t)),2)
@@ -105,8 +105,8 @@ def comp_menu():
             print(' ')
             P = float(input("Principal Amount($): "))
             A = float(input("Annual Percentage Rate(%): "))
-            n = int(input('Compounding Periods(per year):'))
-            t = int(input('Period (Years): '))
+            n = float(input('Compounding Periods(per year):'))
+            t = float(input('Period (Years): '))
             APR = A / 100
             R = ( 1 + ( APR / n ) ) ** ( n * t )
             T = P * R
@@ -121,8 +121,8 @@ def comp_menu():
             clear_screen()
             T = float(input("Total Value($): "))
             A = float(input("Annual Percentage Rate(%): "))
-            n = int(input('Compounding Periods(per year):'))
-            t = int(input('Period (Years): '))
+            n = float(input('Compounding Periods(per year):'))
+            t = float(input('Period (Years): '))
             X = A / 100 / n
             D = (1 + X) ** (n * t)
             P = T / D
@@ -153,8 +153,8 @@ def debt_menu():
             print(' ')
             P = float(input("Principal Amount($): "))
             A = float(input("Annual Percentage Rate(%): "))
-            n = int(input('Compounding Periods(per year):'))
-            t = int(input('Period (Years): '))
+            n = float(input('Compounding Periods(per year):'))
+            t = float(input('Period (Years): '))
             APR = A / 100
             R = APR / n
             N = P * R
@@ -181,8 +181,8 @@ def debt_menu():
             print("Solving for Principal")
             M = float(input("Monthly Payment($): "))
             A = float(input("Annual Percentage Rate(%): "))
-            n = int(input('Compounding Periods(per year):'))
-            t = int(input('Period (Years): '))
+            n = float(input('Compounding Periods(per year):'))
+            t = float(input('Period (Years): '))
             D = ( A / 100 / n)
             N = ( 1 - (( 1 + D )**( -n * t ))) * M
             P = N / D
@@ -216,7 +216,7 @@ def cont_menu():
             print(' ')
             P = float(input("Principal Amount($): "))
             A = float(input("Annual Percentage Rate(%): "))
-            t = int(input("Period (Years): "))
+            t = float(input("Period (Years): "))
             APR = A / 100
             T = P * math.e ** (APR * t)
             print(f"Total Value: {T}")
@@ -232,7 +232,7 @@ def cont_menu():
             print('-----------------')
             print(' ')
             A = float(input("Annual Percentage Rate(%): "))
-            t = int(input("Period (Years): "))
+            t =float(input("Period (Years): "))
             APR = A / 100
             APY = math.e ** (APR * t)
             print(f"Total Value: {APY}")
@@ -243,6 +243,4 @@ def cont_menu():
             elif answer == 'n': sys.exit()
         elif option == '3': main()
 
-
 main()
-
